@@ -23,9 +23,9 @@ def create_subtitles_with_ai(file_path, language=["fr", 'fr-FR']):
     file_path = rename_file(file_path)
 
     if file_path.endswith('.mp3'):
-        run(f'ffmpeg -i {file_path} -acodec pcm_s16le -ac 1 -ar 16000 {file_path.replace(".mp3", ".wav")}'.split(' '), stdout=PIPE)
+        run(f'ffmpeg -y -i {file_path} -acodec pcm_s16le -ac 1 -ar 16000 {file_path.replace(".mp3", ".wav")}'.split(' '), stdout=PIPE)
     elif file_path.endswith('.mp4'):
-        run(f'ffmpeg -i {file_path} -vn -acodec pcm_s16le -ac 1 -ar 16000 {file_path.replace(".mp4", ".wav")}'.split(' '), stdout=PIPE)
+        run(f'ffmpeg -y -i {file_path} -vn -acodec pcm_s16le -ac 1 -ar 16000 {file_path.replace(".mp4", ".wav")}'.split(' '), stdout=PIPE)
     file_path = file_path.replace('.mp4', '.wav').replace('.mp3', '.wav')
     with sr.AudioFile(file_path) as source:
         audio = R.record(source)  # Read the entire audio file
@@ -46,7 +46,7 @@ def create_subtitles_with_ai(file_path, language=["fr", 'fr-FR']):
         'text_legacy_google': text_legacy_google
     }
 
-dict = create_subtitles_with_ai('./MAX AP KARTHUS INSTANT ONE SHOT.mp4')
+# dict = create_subtitles_with_ai('./MAX AP KARTHUS INSTANT ONE SHOT.mp4')
 
-print('\n\n'.join([f'{key}: {value}\n' for key, value in dict.items()]))
+# print('\n\n'.join([f'{key}: {value}\n' for key, value in dict.items()]))
 
