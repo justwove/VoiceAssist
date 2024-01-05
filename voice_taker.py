@@ -33,8 +33,8 @@ def create_subtitles_with_ai(file_path, language=["fr", 'fr-FR']):
     try:
         print('Processing audio file with OpenAI Whisper...')
         text_whisper = R.recognize_whisper(audio, 'large', language=language[0])  
-        print('Processing audio file with Google Speech Recognition...')
-        text_legacy_google = R.recognize_google(audio, language=language[1]) # Use Google Speech Recognition API to convert audio to text
+        # print('Processing audio file with Google Speech Recognition...')
+        # text_legacy_google = R.recognize_google(audio, language=language[1]) # Use Google Speech Recognition API to convert audio to text
     except sr.UnknownValueError:
         print("Speech recognition could not understand audio")
     except sr.RequestError as e:
@@ -43,7 +43,7 @@ def create_subtitles_with_ai(file_path, language=["fr", 'fr-FR']):
     # Return the generated subtitles
     return {
         'text_whisper': text_whisper,
-        'text_legacy_google': text_legacy_google
+        # 'text_legacy_google': text_legacy_google
     }
 
 # dict = create_subtitles_with_ai('./MAX AP KARTHUS INSTANT ONE SHOT.mp4')

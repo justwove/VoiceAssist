@@ -10,3 +10,5 @@ share
 subtitles.txt
 __pycache__
 keywords.txt
+uploads/*
+archive/*
