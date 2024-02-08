@@ -3,21 +3,38 @@ Le nom veut rien dire
 
 # Utilisation 
 
-## GitHub CodeSpace 
+## Installation Python
 
-Pour utiliser cette outils via GitHub CodeSpace il faut 
+Rendez vous sur la page officiel de Python https://www.python.org/downloads/
 
-1. Crée un CodeSpace 
-![Alt text](images/image.png)
+1. Télécharger la dernière version de Python  
+![Alt text](image.png)
 
-2. Executez les commandes suivantes dans le terminal
+2. Executer le programme d'installation et ajouter python dans le PATH  
+![Alt text](image-1.png)
+
+3. Télécharger et unziper le code source https://github.com/justwove/VoiceAssist  
+![Alt text](image-2.png)
+
+4. Ouver un terminal dans le dossier unzipper et executer ces commande  
 ```bash
-python3 -m pip install -r requirements.txt
+python3 -m pip install -r requirements.txt 
 python3 dash_app.py
 ```
 
-3. Pour accedez à l'interface Dash cliquez sur l'onglet "Ports" -> Clique droit "Ouvrir dans le navigateur" Sur la ligne ou le "Processus en cours d'exécution" est "python3 dash_app.py"
-![Alt text](images/image3.png)
+5. Rendez vous sur le lien afficher dans le terminal  
+![Alt text](image-3.png)
 
-3. Sinon cliquez sur "Ouvrir dans le navigateur"
-![Alt text](images/image2.png)
+6. Uploader vos CV & Fiche de poste par rapport au bouton adéquat (Multi files implémenter)  
+![Alt text](image-4.png)
+
+7. Lancer un traitement d'un ou plusieurs CV(s) / fiche de poste(s)
+![Alt text](image-5.png)
+
+A la racine de Dossier (Ou ce trouve se fichier), a chaque traitement un fichier test.xlsx est crée avec un recap des resultats
+
+DISCLAIMER : ATTENTION, a cause d'un bug il faut choisir:
+-  1 CV + 1 fiche de poste
+- Plusieurs CV + 1 fiche de poste
+- 1 CV + Plusieurs fiche de poste 
+- Plusieurs CV + Plusieurs fiche de poste /!\ PEUT NE PAS MARCHER, ca dépend des fois :D

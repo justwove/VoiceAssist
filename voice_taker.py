@@ -41,10 +41,7 @@ def create_subtitles_with_ai(file_path, language=["fr", 'fr-FR']):
         print(f"Could not request results from Google Speech Recognition service; {e}")
 
     # Return the generated subtitles
-    return {
-        'text_whisper': text_whisper,
-        # 'text_legacy_google': text_legacy_google
-    }
+    return text_whisper
 
 # dict = create_subtitles_with_ai('./MAX AP KARTHUS INSTANT ONE SHOT.mp4')
 
