@@ -17,14 +17,10 @@ dash-core-components==2.0.0
 dash-html-components==2.0.0
 dash-table==5.0.0
 distro==1.9.0
-en-core-web-lg @ https://github.com/explosion/spacy-models/releases/download/en_core_web_lg-3.7.1/en_core_web_lg-3.7.1-py3-none-any.whl
-en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl
 et-xmlfile==1.1.0
 filelock==3.13.1
 Flask==3.0.0
-fr-core-news-lg @ https://github.com/explosion/spacy-models/releases/download/fr_core_news_lg-3.7.0/fr_core_news_lg-3.7.0-py3-none-any.whl
 fr-core-news-md @ https://github.com/explosion/spacy-models/releases/download/fr_core_news_md-3.7.0/fr_core_news_md-3.7.0-py3-none-any.whl
-fr-core-news-sm @ https://github.com/explosion/spacy-models/releases/download/fr_core_news_sm-3.7.0/fr_core_news_sm-3.7.0-py3-none-any.whl
 fsspec==2023.12.2
 h11==0.14.0
 httpcore==1.0.2
@@ -103,3 +99,4 @@ weasel==0.3.4
 Werkzeug==3.0.1
 whisper==1.1.10
 zipp==3.17.0
+pyinstaller

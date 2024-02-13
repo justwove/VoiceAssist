@@ -15,3 +15,6 @@ archive/*
 CVs/*
 FPs/*
 *.xlsx
+build
+*.spec
+dash_ap*
